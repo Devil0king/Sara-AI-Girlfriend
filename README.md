@@ -1,71 +1,22 @@
-# 💖 Sara AI GF — Real-Time Voice AI Companion
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-**Sara** is an advanced, emotionally intelligent AI companion designed for natural, human-like voice conversations. Built using Google's **Gemini 3.8 Live API**, Sara offers real-time speech-to-speech interaction with ultra-low latency, expressive vocal tones, and seamless conversational flow.
+# Run and deploy your AI Studio app
 
----
+This contains everything you need to run your app locally.
 
-## ✨ Key Features
+View your app in AI Studio: https://ai.studio/apps/05729be3-966f-4079-8987-f7c5f8d7d1d4
 
-- 🎙️ **Real-Time Voice Conversation:** Instant speech-to-speech responses powered by `gemini-3.8-live` for a realistic phone-call-like experience.
-- 🎭 **Emotionally Expressive:** Understands user tone and responds with natural emotions, warmth, and empathy.
-- 🗣️ **Natural Barge-in Support:** Interrupt Sara mid-sentence just like a real conversation, and she will naturally pause and listen.
-- 🌍 **Multilingual Fluency:** Fluently communicates in **Bengali**, **English**, and 95+ other languages.
-- 🧠 **Customizable Persona:** Easily tweak Sara's personality, mood, and conversational style via system instructions.
+## Run Locally
 
----
+**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
 
-## 🛠️ Tech Stack
 
-- **AI Model:** Google Gemini 3.8 Live (`gemini-3.8-live`)
-- **API:** Google Gemini Live API (WebSockets / Multimodal Live)
-- **Language / Framework:** *(আপনার প্রজেক্টের ভাষা লিখুন, যেমন: Python / Flutter / React / Kotlin)*
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- A valid **Google AI Studio API Key** ([Get it here](https://google.com))
-- *(আপনার প্রজেক্টের প্রয়োজনীয় সফটওয়্যার বা ভার্সন লিখুন, যেমন: Python 3.10+ বা Node.js)*
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd sara-ai-gf
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   # উদাহরণ (আপনার প্রজেক্ট অনুযায়ী পরিবর্তন করুন)
-   pip install -r requirements.txt
-   ```
-
-3. **Set up your API Key:**
-   Create a `.env` file in the root directory and add your Gemini API key:
-   ```env
-   GEMINI_API_KEY=your_api_key_here
-   ```
-
-4. **Run the application:**
-   ```bash
-   # উদাহরণ
-   python main.py
-   ```
-
----
-
-## ⚠️ Disclaimer
-
-This project is intended for entertainment, companionship, and educational purposes. Please ensure compliance with Google's Generative AI Terms of Service and safety guidelines.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com).
-
----
-
-<p align="center">Made with ❤️ using Google Gemini</p>
+1. Open Android Studio
+2. Select **Open** and choose the directory containing this project
+3. Allow Android Studio to fix any incompatibilities as it imports the project.
+4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
+5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
+6. Run the app on an emulator or physical device
+7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
